@@ -4,7 +4,7 @@ use grsp::{Config, run};
 fn main() {
     // 读取参数
     let args:Vec<String> = env::args().collect();
-    let config = Config::build(&args).unwrap_or_else(|err|{
+    let config = Config::build(env::args()).unwrap_or_else(|err|{
         println!("Problem parsing arguments: {err}");
         process::exit(1);
     });
