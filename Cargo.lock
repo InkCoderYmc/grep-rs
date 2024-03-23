@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "grsp"
+name = "grsp-rs"
 version = "0.1.0"
