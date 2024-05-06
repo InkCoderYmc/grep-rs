@@ -1,9 +1,9 @@
+use grep_rs::{run, Config};
 use std::{env, process};
-use grep_rs::{Config, run};
 
 fn main() {
     // 读取参数
-    let config = Config::build(env::args()).unwrap_or_else(|err|{
+    let config = Config::build(env::args()).unwrap_or_else(|err| {
         println!("Problem parsing arguments: {err}");
         process::exit(1);
     });
@@ -13,3 +13,4 @@ fn main() {
         process::exit(1);
     }
 }
+
